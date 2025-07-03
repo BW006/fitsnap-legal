@@ -1,0 +1,196 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitSnap App Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #faf8ff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(80, 0, 120, 0.07);
+      padding: 32px 24px;
+    }
+    h1 {
+      color: #6b46c1;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .contact {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .contact a {
+      color: #6b46c1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .faq-section {
+      margin-bottom: 32px;
+    }
+    .faq-title {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #6b46c1;
+    }
+    .faq {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 8px;
+    }
+    .faq button {
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-size: 1em;
+      padding: 16px 0;
+      color: #222;
+      cursor: pointer;
+      outline: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .faq button:hover {
+      color: #6b46c1;
+    }
+    .faq-content {
+      display: none;
+      padding-bottom: 16px;
+      color: #444;
+      font-size: 0.98em;
+    }
+    .faq.open .faq-content {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .links {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.98em;
+    }
+    .links a {
+      color: #6b46c1;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FitSnap Support</h1>
+    <div class="contact">
+      <p>Need help? Email us at <a href="mailto:support@fitsnap-app.com">support@fitsnap-app.com</a></p>
+    </div>
+
+    <div class="faq-section">
+      <div class="faq-title">Frequently Asked Questions</div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          How do I use the virtual try-on feature?
+        </button>
+        <div class="faq-content">
+          <p>Go to the "Try-On" tab, upload a clear photo of yourself, and follow the instructions to see how different clothes look on you virtually!</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          How can I search for similar clothing items?
+        </button>
+        <div class="faq-content">
+          <p>Tap the "Visual Search" tab, upload or snap a photo of a clothing item, and FitSnap will find similar styles and shopping links for you.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          Do I need an account to use FitSnap?
+        </button>
+        <div class="faq-content">
+          <p>Yes, you’ll need to sign in with Apple or Google to use all features. This helps keep your data secure and lets you save your try-ons and search history.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          How do I manage or cancel my subscription?
+        </button>
+        <div class="faq-content">
+          <p>Open the app, go to the Profile or Subscription section, and tap "Manage Subscription" to view or cancel via your App Store account.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          What do I get with a premium subscription?
+        </button>
+        <div class="faq-content">
+          <p>Premium gives you unlimited virtual try-ons, unlimited visual searches, cloud storage for your results, and priority processing.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          How do I delete my account or data?
+        </button>
+        <div class="faq-content">
+          <p>To delete your account and all associated data, please email us at <a href="mailto:support@fitsnap-app.com">support@fitsnap-app.com</a> from the email you used to sign up.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          Is my data private and secure?
+        </button>
+        <div class="faq-content">
+          <p>Yes! We take privacy seriously. Please see our <a href="privacy-policy.html">Privacy Policy</a> for details on how your data is handled and protected.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          Why am I having trouble signing in?
+        </button>
+        <div class="faq-content">
+          <p>Make sure you have a stable internet connection and are using the latest version of the app. If you still have issues, contact us for help.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button type="button" onclick="toggleFaq(this)">
+          Still need help?
+        </button>
+        <div class="faq-content">
+          <p>Email us at <a href="mailto:support@fitsnap-app.com">support@fitsnap-app.com</a> and we’ll get back to you as soon as possible!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="terms-of-service.html">Terms of Service</a> |
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <script>
+    function toggleFaq(btn) {
+      var faq = btn.parentElement;
+      faq.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
